@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 It is a simple boilerplate project.   
 Please feel free to message me If you find any bugs and problems.    
-You can find the The Web API [here](https://github.com/hmdnikoo/MovieInformation)   
+You can find the the Web API [here](https://github.com/hmdnikoo/MovieInformation)   
 
 ## Development server
 
