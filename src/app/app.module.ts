@@ -1,3 +1,4 @@
+import { NzTableModule } from 'ng-zorro-antd/table';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -26,6 +27,7 @@ registerLocaleData(en);
     IconsProviderModule,
     NzLayoutModule,
     NzMenuModule,
+    NzTableModule,
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule

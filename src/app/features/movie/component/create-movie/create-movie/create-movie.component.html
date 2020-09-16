@@ -1,0 +1,49 @@
+<div>
+  <form nz-form (ngSubmit)="submitForm()" [formGroup]="form">
+    <nz-form-item>
+      <nz-form-label nzXs="24" nzSm="4" nzFor="title" nzRequired>Title</nz-form-label>
+      <nz-form-control nzXs="24" nzSm="6" [nzErrorTip]="errorTplTitle">
+        <input nz-input name="title" formControlName="title" >
+        <ng-template #errorTplTitle let-control>
+          <ng-container *ngIf="control.hasError('required')">
+            It is required.
+          </ng-container>
+        </ng-template>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label nzXs="24" nzSm="4" nzFor="language" nzRequired>Language</nz-form-label>
+      <nz-form-control nzXs="24" nzSm="6" [nzErrorTip]="errorTplLanguage">
+        <input nz-input name="language" formControlName="language" >
+        <ng-template #errorTplLanguage let-control>
+          <ng-container *ngIf="control.hasError('required')">
+            It is required.
+          </ng-container>
+        </ng-template>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label nzXs="24" nzSm="4" nzFor="storyLine" nzRequired>StoryLine</nz-form-label>
+      <nz-form-control nzXs="24" nzSm="6" [nzErrorTip]="errorTplStoryLine">
+        <textarea formControlName="storyLine" name="storyLine" nz-input></textarea>
+        <ng-template #errorTplStoryLine let-control>
+          <ng-container *ngIf="control.hasError('required')">
+            It is required.
+          </ng-container>
+        </ng-template>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <div nz-col>
+        <nz-form-control>
+          <div class="ant-divider ant-divider-vertical" role="separator"></div>
+          <button nz-button nzType="primary" class="add-btn ant-btn-lg" [nzLoading]="isSaving"
+            [disabled]="form.invalid || !form.dirty">
+            Save</button>
+          <button nz-button nzType="default" class="ant-btn-lg" (click)="cancel()">Cancel</button>
+        </nz-form-control>
+      </div>
+    </nz-form-item>
+  </form>
+</div>
+<div>

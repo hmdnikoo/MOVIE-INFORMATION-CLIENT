@@ -1,0 +1,21 @@
+<nz-table #basicTable [nzData]="listOfData">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Language</th>
+      <th>Story Line</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of listOfData">
+      <td>{{data.title}}</td>
+      <td>{{data.language}}</td>
+      <td>{{data.storyLine}}</td>
+      <td>
+        <a (click)='handleEdit(data)'>Edit</a>
+        <nz-divider nzType="vertical"></nz-divider>
+        <a nz-popconfirm nzPopconfirmTitle="Sure to delete?" (nzOnConfirm)='handleDelete(data.id)'>Delete</a>
+      </td>
+    </tr>
+  </tbody>
+</nz-table>
