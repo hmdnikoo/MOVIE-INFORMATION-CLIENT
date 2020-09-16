@@ -1,6 +1,11 @@
 # MOVIEINFORMATIONCLIENT
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.1.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.1.   
+
+It is a boilerplate project.   
+I developed it in 5 hours!   
+Please feel free to message me If you find any bugs and problems or you have any idea.   
+You can find the The Web API [here](https://github.com/hmdnikoo/MovieInformation)   
 
 ## Development server
 
