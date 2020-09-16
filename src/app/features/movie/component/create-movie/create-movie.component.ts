@@ -1,10 +1,11 @@
-import { MovieItem } from './../../../type/movieItem';
+
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { MovieService } from '../../../service/movie.service';
 import { NzMessageService } from 'ng-zorro-antd';
 import { ActivatedRoute, Router } from '@angular/router';
-import { MovieItemDataTransmissionService } from '../../../service/movie-item-data-transmission.service';
+import { MovieItem } from '../../type/movieItem';
+import { MovieService } from '../../service/movie.service';
+import { MovieItemDataTransmissionService } from '../../service/movie-item-data-transmission.service';
 
 @Component({
   selector: 'app-create-movie',
